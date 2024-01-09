@@ -1,0 +1,17 @@
+.Card {
+  padding: 1px 1px;
+  border: 0.2vw;
+  border-color: #000000;
+  border-style: solid;
+  background-color: rgb(139, 16, 16);
+  width: 4.5vw;
+  height: 4vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Card p {
+  width: fit-content;
+  height: fit-content;
+  text-align: center;
+}

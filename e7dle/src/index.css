@@ -9,10 +9,13 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #cccccc;
+  background-attachment: fixed;
   box-shadow: inset 0vw 0vw 50vw 5vw #242424;
-  box-sizing: content-box;
-  width: 100vw;
-  height: 100vh;
+
+  position: absolute;
+
+  min-width: 100vw;
+  min-height: 100vh;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
