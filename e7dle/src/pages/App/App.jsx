@@ -35,10 +35,10 @@ function App() {
       }
     }
 
-    const newChar = {
+    const newCard = {
       name: charInput,
     };
-    setCards((prevState) => [...prevState, newChar]);
+    setCards((prevState) => [...prevState, newCard]);
   }
 
   useEffect(() => {
@@ -66,12 +66,12 @@ function App() {
       <div>
         <SearchBox
           searchInput={setCharInput}
-          button={handleAddCard}
+          buttonFunc={handleAddCard}
           searchData={charNames}
         />
         <CharHeader />
-        {cards.map((char) => (
-          <CharCard name={char.name} />
+        {cards.map((card) => (
+          <CharCard name={card.name} />
         ))}
       </div>
     </>
