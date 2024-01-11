@@ -53,7 +53,7 @@ function App() {
       if (userTryChar.rarity === dailyChar.char.rarity) {
         charResult.rarity = ["green", "green"];
       } else if (userTryChar.rarity > dailyChar.char.rarity) {
-        charResult.rarity = ["red", "down"];
+        charResult.rarity = ["red", "lower"];
       }
     }
     return charResult;
@@ -120,9 +120,12 @@ function App() {
           <CharCard
             name={card.name}
             gender={card.gender}
+            element={"Fire"}
             charClass={card.role}
             zodiac={card.zodiac}
             rarity={card.rarity}
+            origin={"Ritania"}
+            imprint={"Attack"}
             userTry={card.userTry}
           />
         ))}

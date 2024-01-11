@@ -1,14 +1,16 @@
 .CharCard {
   background-color: #242424;
-  width: 40vw;
-  height: 12vh;
+  width: 700px;
+  height: 80px;
+  padding: 10px 5px;
 
-  border: 0.2vw black;
+  border: 1px;
+  border-radius: 10px;
   border-style: solid;
 
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-
-  margin-top: 2vh;
+  flex-wrap: wrap;
+  margin-top: 0.25vh;
 }

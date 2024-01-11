@@ -1,9 +1,9 @@
 import "./Card.css";
 
-export function Card({ value, choiceColor }) {
+export function Card({ value, choiceColor, fontSize = 1 }) {
   return (
     <div className="Card" style={{ background: choiceColor }}>
-      <p>{value}</p>
+      <p style={{ fontSize: fontSize + "rem" }}>{value}</p>
     </div>
   );
 }
