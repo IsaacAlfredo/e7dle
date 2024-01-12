@@ -26,11 +26,11 @@ function App() {
 
   function charCompare(userTryChar) {
     var charResult = {
-      name: "red",
-      gender: "red",
-      role: "red",
-      zodiac: "red",
-      rarity: ["red", "upper"],
+      name: "#910d0d",
+      gender: "#910d0d",
+      role: "#910d0d",
+      zodiac: "#910d0d",
+      rarity: ["#910d0d", "upper"],
     };
     if (userTryChar.name === dailyChar.char.name) {
       charResult = {
@@ -53,7 +53,7 @@ function App() {
       if (userTryChar.rarity === dailyChar.char.rarity) {
         charResult.rarity = ["green", "green"];
       } else if (userTryChar.rarity > dailyChar.char.rarity) {
-        charResult.rarity = ["red", "lower"];
+        charResult.rarity = ["#910d0d", "lower"];
       }
     }
     return charResult;
@@ -109,26 +109,28 @@ function App() {
 
   return (
     <>
-      <div>
+      <div className="App">
         <SearchBox
           searchInput={setCharInput}
           buttonFunc={handleAddCard}
           searchData={charNames}
         />
-        <CharHeader />
-        {cards.map((card) => (
-          <CharCard
-            name={card.name}
-            gender={card.gender}
-            element={"Fire"}
-            charClass={card.role}
-            zodiac={card.zodiac}
-            rarity={card.rarity}
-            origin={"Ritania"}
-            imprint={"Attack"}
-            userTry={card.userTry}
-          />
-        ))}
+        <div className="CardsContainer">
+          <CharHeader />
+          {cards.map((card) => (
+            <CharCard
+              name={card.name}
+              gender={card.gender}
+              element={"Fire"}
+              charClass={card.role}
+              zodiac={card.zodiac}
+              rarity={card.rarity}
+              origin={"Ritania"}
+              imprint={"Attack"}
+              userTry={card.userTry}
+            />
+          ))}
+        </div>
       </div>
     </>
   );

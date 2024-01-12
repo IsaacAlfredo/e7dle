@@ -1,14 +1,21 @@
 .CharHeader {
   background-color: #242424;
-  width: 40vw;
-  height: 5vh;
+  width: 800px;
+  height: 50px;
 
   border: 0.2vw black;
   border-style: solid;
+  border-radius: 25px;
 
   display: flex;
   justify-content: space-around;
   align-items: center;
 
+  box-shadow: inset 0vw 0vw 10px 2px black;
+
   margin-top: 2vh;
+}
+
+.CharHeader p {
+  width: 70px;
 }

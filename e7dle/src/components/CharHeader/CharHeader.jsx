@@ -8,6 +8,9 @@ export function CharHeader() {
       <p>Element</p>
       <p>Class</p>
       <p>Rarity</p>
+      <p>Zodiac</p>
+      <p>Origin</p>
+      <p>S. Imprint</p>
       <p>Release</p>
     </div>
   );

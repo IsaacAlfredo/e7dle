@@ -16,12 +16,13 @@ export function CharCard({
     <div className="CharCard">
       <Card value={name} choiceColor={userTry.name} fontSize={0.75} />
       <Card value={gender} choiceColor={userTry.gender} />
-      <Card value={element} choiceColor={"red"} />
+      <Card value={element} choiceColor={"#910d0d"} />
       <Card value={charClass} choiceColor={userTry.role} />
       <Card value={rarity} choiceColor={userTry.rarity[0]} />
       <Card value={zodiac} choiceColor={userTry.zodiac} />
-      <Card value={origin} choiceColor={"red"} />
-      <Card value={imprint} choiceColor={"red"} />
+      <Card value={origin} choiceColor={"#910d0d"} />
+      <Card value={imprint} choiceColor={"#910d0d"} />
+      <Card value={2018} choiceColor={"#910d0d"} />
     </div>
   );
 }
